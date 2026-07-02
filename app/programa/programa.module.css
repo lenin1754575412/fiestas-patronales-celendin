@@ -1,0 +1,366 @@
+﻿.wrapper {
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 90px 6%;
+}
+
+.topStats {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 34px;
+}
+
+.topStats article {
+  background: #ffffff;
+  border: 1px solid rgba(6, 42, 81, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 14px 35px rgba(6, 35, 70, 0.08);
+  padding: 22px;
+}
+
+.topStats span {
+  color: #7d899c;
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.topStats strong {
+  color: #061a36;
+  font-size: 21px;
+}
+
+.headerBlock {
+  align-items: end;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.sectionLabel {
+  color: #f4bc3f;
+  display: block;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.headerBlock h2 {
+  color: #061a36;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.08;
+  margin-bottom: 14px;
+}
+
+.headerBlock p {
+  color: #627086;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 760px;
+}
+
+.facebookButton {
+  align-items: center;
+  background: #1877f2;
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 900;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 24px;
+  transition: transform 0.25s ease;
+  white-space: nowrap;
+}
+
+.facebookButton:hover {
+  transform: translateY(-3px);
+}
+
+.programGrid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+}
+
+.programCard {
+  background: #ffffff;
+  border: 1px solid rgba(6, 42, 81, 0.12);
+  border-radius: 26px;
+  box-shadow: 0 16px 45px rgba(6, 35, 70, 0.08);
+  padding: 30px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.programCard:hover {
+  box-shadow: 0 24px 55px rgba(6, 35, 70, 0.14);
+  transform: translateY(-8px);
+}
+
+.cardTop {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.number {
+  color: #d2d9e3;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.icon {
+  align-items: center;
+  background: #fff2d2;
+  border-radius: 18px;
+  display: flex;
+  font-size: 30px;
+  height: 66px;
+  justify-content: center;
+  width: 66px;
+}
+
+.time {
+  color: #bc2735;
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.programCard h3 {
+  color: #061a36;
+  font-size: 22px;
+  line-height: 1.32;
+  margin-bottom: 14px;
+}
+
+.programCard p {
+  color: #627086;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.informationGrid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.noticeCard,
+.routeCard {
+  background: #ffffff;
+  border: 1px solid rgba(6, 42, 81, 0.12);
+  border-radius: 26px;
+  box-shadow: 0 16px 45px rgba(6, 35, 70, 0.08);
+  padding: 30px;
+}
+
+.noticeLabel {
+  color: #f4bc3f;
+  display: block;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.noticeCard h3,
+.routeCard h3 {
+  color: #061a36;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.noticeCard p,
+.routeCard p {
+  color: #627086;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.noticeBox {
+  background: #f8fafc;
+  border: 1px solid rgba(6, 42, 81, 0.08);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 22px 0;
+  padding: 18px;
+}
+
+.noticeBox strong {
+  color: #061a36;
+  font-size: 14px;
+}
+
+.noticeBox span {
+  color: #627086;
+  font-size: 14px;
+}
+
+.primaryButton,
+.secondaryButton {
+  align-items: center;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 900;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 24px;
+  transition: transform 0.25s ease;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-3px);
+}
+
+.primaryButton {
+  background: #0b417c;
+  color: #ffffff;
+}
+
+.secondaryButton {
+  border: 1px solid rgba(6, 42, 81, 0.14);
+  color: #061a36;
+  margin-top: 22px;
+}
+
+.routeList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.routeItem {
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid rgba(6, 42, 81, 0.08);
+  border-radius: 16px;
+  display: flex;
+  gap: 14px;
+  padding: 12px 14px;
+}
+
+.routeItem span {
+  align-items: center;
+  background: #f4bc3f;
+  border-radius: 11px;
+  color: #061a36;
+  display: flex;
+  font-size: 11px;
+  font-weight: 900;
+  height: 36px;
+  justify-content: center;
+  min-width: 36px;
+}
+
+.routeItem p {
+  color: #061a36;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.quotePanel {
+  background: linear-gradient(135deg, #061a36, #0b417c);
+  border-radius: 28px;
+  color: #ffffff;
+  margin-top: 28px;
+  padding: 40px 34px;
+  text-align: center;
+}
+
+.quotePanel span {
+  color: #ffd873;
+  display: block;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.quotePanel blockquote {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(22px, 3vw, 35px);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .programGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .informationGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .topStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .headerBlock {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    padding: 70px 5%;
+  }
+
+  .topStats {
+    grid-template-columns: 1fr;
+  }
+
+  .programCard,
+  .noticeCard,
+  .routeCard {
+    padding: 24px;
+  }
+
+  .programCard h3 {
+    font-size: 20px;
+  }
+
+  .noticeCard h3,
+  .routeCard h3 {
+    font-size: 24px;
+  }
+
+  .facebookButton,
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .quotePanel {
+    padding: 32px 22px;
+  }
+}
