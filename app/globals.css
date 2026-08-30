@@ -596,6 +596,60 @@ a {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.historyTimeline {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.historyTimeline article {
+  align-items: center;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 17px 45px rgba(7, 40, 77, 0.08);
+  display: flex;
+  gap: 22px;
+  padding: 24px;
+}
+
+.historyIcon {
+  align-items: center;
+  background: #fff2d1;
+  border-radius: 14px;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 24px;
+  height: 52px;
+  justify-content: center;
+  width: 52px;
+}
+
+.historyTimeline small {
+  color: var(--gold-light);
+  background: var(--navy);
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  padding: 4px 12px;
+  text-transform: uppercase;
+}
+
+.historyTimeline h3 {
+  color: var(--navy);
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.historyTimeline p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
 .quoteBox {
   background: var(--navy);
   border-radius: 27px;
