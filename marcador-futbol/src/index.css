@@ -1,0 +1,80 @@
+:root {
+  /* Paleta clara estilo BeSoccer */
+  --color-bg: #eef1f4;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f7f9fb;
+  --color-border: #e4e8ec;
+  --color-text: #1c2733;
+  --color-text-soft: #6b7785;
+  --color-muted: #97a3b0;
+
+  --color-primary: #12b76a;      /* verde marcador */
+  --color-primary-dark: #0e9457;
+  --color-accent: #ff5a3c;       /* rojo "en vivo" / cuota destacada */
+  --color-live: #e23c3c;
+  --color-odd-bg: #f2f5f8;
+  --color-odd-best: #12b76a;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 1px 2px rgba(20, 40, 60, .06), 0 4px 14px rgba(20, 40, 60, .05);
+  --font: 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f151b;
+    --color-surface: #182029;
+    --color-surface-alt: #1e2832;
+    --color-border: #26313c;
+    --color-text: #e8edf2;
+    --color-text-soft: #9aa7b4;
+    --color-muted: #6d7a87;
+    --color-odd-bg: #222d38;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar { height: 8px; width: 8px; }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 8px; }

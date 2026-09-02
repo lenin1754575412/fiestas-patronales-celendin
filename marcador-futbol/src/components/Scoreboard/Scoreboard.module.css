@@ -1,0 +1,20 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.empty {
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  padding: 48px 20px;
+  text-align: center;
+  color: var(--color-text-soft);
+}
+
+.emptyIcon {
+  font-size: 34px;
+  display: block;
+  margin-bottom: 8px;
+  opacity: 0.6;
+}

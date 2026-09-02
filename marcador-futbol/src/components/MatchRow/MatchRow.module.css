@@ -1,0 +1,182 @@
+.row {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr) auto auto 26px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-top: 1px solid var(--color-border);
+  transition: background 0.2s ease;
+}
+
+.row:hover {
+  background: var(--color-surface-alt);
+}
+
+.flash {
+  animation: flashBg 2.2s ease;
+}
+
+@keyframes flashBg {
+  0% { background: rgba(18, 183, 106, 0.22); }
+  100% { background: transparent; }
+}
+
+/* --- Estado --- */
+.status {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.liveTime {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.minute {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-live);
+  font-variant-numeric: tabular-nums;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-soft);
+}
+
+.timeFinished {
+  color: var(--color-muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* --- Equipos --- */
+.teams {
+  display: grid;
+  grid-template-columns: 1fr 28px;
+  grid-template-areas:
+    'home score'
+    'away score';
+  align-items: center;
+  text-align: left;
+  gap: 4px 8px;
+  width: 100%;
+  padding: 2px 0;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.team:first-of-type { grid-area: home; }
+.team:last-of-type { grid-area: away; }
+
+.badge {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.teamName {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.winner .teamName {
+  font-weight: 700;
+}
+
+.score {
+  grid-area: score;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+  position: relative;
+}
+
+.scoreLive {
+  color: var(--color-live);
+}
+
+.pens {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 4px;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--color-muted);
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+/* --- TV --- */
+.tv {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.tvBadge {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--color-text-soft);
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  padding: 2px 6px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* --- Cuotas --- */
+.odds {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.expand {
+  color: var(--color-muted);
+  font-size: 16px;
+  line-height: 1;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+.expand:hover {
+  background: var(--color-surface-alt);
+  color: var(--color-primary);
+}
+
+@media (max-width: 720px) {
+  .row {
+    grid-template-columns: 48px minmax(0, 1fr) 22px;
+  }
+  .tv { display: none; }
+  .odds { display: none; }
+}
