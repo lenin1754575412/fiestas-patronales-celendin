@@ -1,0 +1,52 @@
+.group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  min-width: 168px;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 6px 4px;
+  border-radius: var(--radius-sm);
+  background: var(--color-odd-bg);
+  border: 1px solid transparent;
+  transition: transform 0.08s ease, border-color 0.12s ease, background 0.12s ease;
+  min-width: 52px;
+}
+
+.cell:hover {
+  border-color: var(--color-primary);
+  background: var(--color-surface);
+  transform: translateY(-1px);
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Cuota del favorito (más baja) */
+.best .value {
+  color: var(--color-primary-dark);
+}
+.best {
+  background: rgba(18, 183, 106, 0.1);
+}
+
+@media (max-width: 720px) {
+  .group { min-width: 0; }
+}
